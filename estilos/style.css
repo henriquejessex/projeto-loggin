@@ -29,25 +29,95 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #F2B705;
     width: 250px;
-    height: 500px;
+    height: 475px;
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.358);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+    text-align: center;
 
     transition: width .3s, heigth .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login > div#imagem{
     display: block;
     background: #F27405 url(../imagens/pexels-fiona-art-5022847.jpg) no-repeat;
     background-size: cover;
     background-position: right top;
-    height: 250px;
+    height: 200px;
 }
 section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+form > div.campo{
+    background-color: #F27405;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0;
+    text-align: center;
+
+}
+div.campo > label{
+    display: none;
+}
+div.campo > span{
+    color: wheat;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > span:hover{
+    color: #060273;
+}
+div.campo > input{
+    border: 2px solid #F27405;
+    background-color: #9da0b1;
+    font-size: 1em;
+    border-radius: 8px;
+    height: 100%;
+    width: calc(100% - 44px);
+    transform: translateY(-10px);
+}
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #072BF2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover{
+    background-color: #4a63eb;
+}
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;    
+    background-color: #c2c5d5;
+    color: #060273;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #060273;
+}
+form > a.botao:hover{
+    background-color: #5366d3;    
+}
+form > a.botao > span{
+    font-size: 1em;
 }
